@@ -1,1 +1,67 @@
- <p>This project isn't done yet. Come back later.</p>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+    margin:    0 auto;
+    max-width: 900px;
+}
+
+body{
+max-width: 750px;
+height: 100vh;
+align: center;
+min-height: 100%;
+background-color: #CEF;
+font-family: sans-serif;
+border-right: #ACE dashed;
+padding-right: 2em;
+border-left: #ACE dashed;
+padding-left: 2em;
+}
+
+h1{
+text-align: center;
+font-size: 50px;
+color: #080;
+text-shadow: #FF0 0 0 3px, #FF0 0 0 6px;
+}
+</style>
+</head>
+<body>
+<h1>DesmosCE</h1>
+<hr>
+<h2>A project intended to let you use desmos on a TI-84 Plus CE.</h2>
+<hr>
+<p>
+I never ended up finishing this project. I got bored and I eventually realized that I would probably never go back and finish it.
+So here is what I got. It's functional, but only just. Here are the steps to getting it set up:
+</p>
+<ol>
+<li>Click <a href="https://basic-experimental.github.io/downloads/DesmosCE">here</a> to download the zip file</li>
+<li>Extract the file</li>
+<li>If your calculator can already run executables, you can skip this. If not, you need to first download <a href="https://yvantt.github.io/arTIfiCE/">arTIfiCE</a> or use another method of doing so</li>
+<li>Upload SRLCOLOR.8xp to your calculator using <a href="https://education.ti.com/en/products/computer-software/ti-connect-ce-sw">TI Connect CE</a></li>
+<li>Connect your calculator to your computer via a USB cable</li>
+<li>Setup DesmosCE.py. It requires pyserial, selenium, urllib, PIL, and pynput. Replace "PUT CHROMEDRIVER PATH HERE" with your chromedriver path for selenium. I have only tested this on windows</li>
+</ol>
+<br>
+<p>
+Now to start the program:
+</p>
+<ol>
+<li>Connect your calculator to your computer via a USB cable</li>
+<li>Run SRLCOLOR</li>
+<li>Run DesmosCE.py</li>
+</ol>
+<br>
+<p>
+In case you want to edit the code, the uncompiled c program for SRLCOLOR is provided (main.c). You can use the <a href="https://github.com/CE-Programming/toolchain">CEdev Toolchain</a> to compile it.
+</p>
+<hr>
+<p>
+Again, I never plan to go back to this project, so please don't try to get me to fix bugs or add features.
+</p>
+<hr>
+</body>
+</html>
