@@ -2,22 +2,35 @@
 <html>
 <head>
 <style>
-html {
-    margin:    0 auto;
+html{
+    margin: 0 auto;
     max-width: 900px;
 }
 
 body{
 max-width: 750px;
+min-width: min(750px, 100%);
 height: 100vh;
-align: center;
+margin-left: 50%;
+transform: translate(-50%);
 min-height: 100%;
 background-color: #CEF;
 font-family: sans-serif;
+}
+
+@media (min-width: calc(750px + 4em)) {
+body{
 border-right: #ACE dashed;
 padding-right: 2em;
 border-left: #ACE dashed;
 padding-left: 2em;
+}
+}
+
+@media not all and (min-width: calc(750px + 4em)) {
+html{
+margin: 1em;
+}
 }
 
 h1{
